@@ -1,42 +1,119 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
+:root {
+  font-family: Roboto, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+a {
+  font-weight: 500;
+  color: #46acf0;
+  text-decoration: inherit;
+  font-size: 1.2rem;
+}
+a:hover {
+  opacity: .7;
+  /* color: #7379cc; */
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.8em;
+  line-height: 1.1;
+}
+
+.light-gray{
+  color: #dda5a5;
+}
+
+p, b{
+  font-size: 1.1rem;
+}
+
+#root{
+  display: flex;
+  gap: 3rem;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+}
+
+aside{
+  text-align: right;
+}
+
+aside img{
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+aside nav{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+aside nav a{
+  line-height: 2rem;
+}
+
+main {
+  max-width: 600px;
+  text-align: start;
+  /* display: flex; */
+}
+
+main h1, h2, p, b{
+  margin-bottom: .8rem;
+}
+
+@media (max-width: 700px) {
+  #root {
+    flex-wrap: wrap; /* Items will wrap when the screen width is 600px or less */
   }
-  to {
-    transform: rotate(360deg);
+  aside nav{
+    align-items: center;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+/* 
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
