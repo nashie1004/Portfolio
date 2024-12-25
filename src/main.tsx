@@ -7,14 +7,14 @@ import Biography from './pages/Biography.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-  <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<App />}>
-            <Route index element={<Biography />} />
-            <Route path="/applications" element={<Applications />} />
-            <Route path="*" element={<Biography />} />
-            </Route>
-        </Routes>
-      </BrowserRouter>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />}>
+          <Route index element={<Biography />} />
+          <Route path="/applications" element={<Applications />} />
+          <Route path="*" element={<Biography />} />
+          </Route>
+      </Routes>
+    </BrowserRouter>
   </StrictMode>,
 )

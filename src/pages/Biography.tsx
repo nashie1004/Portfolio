@@ -4,9 +4,7 @@ export default function Biography() {
   return (
     <>
       <h1>Hi.</h1>
-
       <h2>About me</h2>
-
       <p>I'm a full-stack developer living in the Philippines specializing in developing web applications with ASP.NET Core, React, Typescript and SQL.</p>
       <p>
         I have been working at 
@@ -20,7 +18,6 @@ export default function Biography() {
       </p>
 
       <h2>My Career Timeline</h2>
-
       <b>1. September 2022</b>
       <p>
         I started my programming journey with 
