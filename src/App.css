@@ -99,11 +99,12 @@ aside #links a{
 }
 
 aside #links #sites{
+  margin-top: .5rem;
   display: flex;
   gap: .4rem;
 }
 
-aside nav a{
+aside nav a, ul li{
   line-height: 2rem;
 }
 
@@ -118,11 +119,27 @@ main h1, h2, p, b{
   margin-bottom: .8rem;
 }
 
+main .card a{
+  color: rgba(255, 255, 255, 0.87);
+}
+
+main .card .card-links{
+  margin-bottom: .8rem;
+  display: flex;
+  gap: .5rem;
+}
+
+main .card .card-links a{
+  border: 1px solid rgba(255, 255, 255, 0.87);
+  padding-inline: .5rem;
+  padding-block: .2rem;
+}
+
 @media (max-width: 700px) {
   #root {
     flex-wrap: wrap; /* Items will wrap when the screen width is 600px or less */
   }
-  aside nav{
+  aside nav, aside #links{
     align-items: center;
   }
 }

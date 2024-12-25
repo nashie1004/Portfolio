@@ -9,16 +9,17 @@ export default function Aside() {
       <h2>Full-stack Developer</h2>
 
       <div id="links">
-        <a className='light-gray' href="mainto:naocenar@gmail.com">naocenar@gmail.com</a>
+        <a href="mainto:naocenar@gmail.com">naocenar@gmail.com</a>
+        <a href="#">Resume</a>
+        <a href="https://nashandrew.onrender.com/">My Previous Site</a>
         <div id="sites">
-          <a href="#"><FaGithub size={40} /></a>
-          <a href="#"><FaLinkedin size={40} /></a>
+          <a href="https://github.com/nashie1004"><FaGithub size={40} /></a>
+          <a href="https://www.linkedin.com/in/nash-ocenar-447b63253/"><FaLinkedin size={40} /></a>
         </div>
       </div>
 
       <nav>
         <NavLink to="/">Biography</NavLink>
-        <NavLink to="/techStack">Tech Stack</NavLink>
         <NavLink to="/applications">Applications</NavLink>
       </nav>
     </aside>
