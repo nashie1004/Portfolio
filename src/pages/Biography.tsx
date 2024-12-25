@@ -35,7 +35,7 @@ export default function Biography() {
         <li>Javascript and Typescript</li>
         <li>JQuery</li>
         <li>React.js</li>
-        <li>C# ASP.NET Core</li>
+        <li>C# / ASP.NET Core</li>
         <li>SQL Server / SQL</li>
         <li>Node.js</li>
         <li>Crystal Report</li>
