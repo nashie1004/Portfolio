@@ -110,13 +110,25 @@ aside nav a, ul li{
 
 main {
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   text-align: start;
   /* display: flex; */
 }
 
 main h1, h2, p, b{
   margin-bottom: .8rem;
+}
+
+main .card{
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+main img{
+  width: 220px;
+  height: 170px;
+  object-fit: cover;
 }
 
 main .card a{
@@ -135,7 +147,7 @@ main .card .card-links a{
   padding-block: .2rem;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 730px) {
   #root {
     flex-wrap: wrap; /* Items will wrap when the screen width is 600px or less */
   }

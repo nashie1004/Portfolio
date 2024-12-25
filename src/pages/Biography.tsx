@@ -1,3 +1,5 @@
+import moment from "moment";
+
 export default function Biography() {
   return (
     <>
@@ -7,9 +9,14 @@ export default function Biography() {
 
       <p>I'm a full-stack developer living in the Philippines specializing in developing web applications with ASP.NET Core, React, Typescript and SQL.</p>
       <p>
-        I'm currently working at 
+        I have been working at 
         <a href="https://www.linkedin.com/company/algar-information-systems-inc-"> ALGAR Information Systems Inc. </a>
-        for almost 1.5 years, developing web applications with JQuery, C#, SQL Server and Crystal Report.
+        for {moment().diff("7/10/2023", "years", true).toFixed(1)} year(s), developing web applications with JQuery, C#, SQL Server and Crystal Report.
+      </p>
+      <p>
+        You can contact me on my 
+        <a href="https://www.linkedin.com/in/nash-ocenar-447b63253/"> LinkedIn </a>
+        or send me an email at <a href="mailto:naocenar@gmail.com"> naocenar@gmail.com</a>.
       </p>
 
       <h2>My Career Timeline</h2>
@@ -25,8 +32,8 @@ export default function Biography() {
       <p>I started working professionally as a web developer.</p>
       <b>3. July 2024</b>
       <p>I reached 1 year of work experience, gaining more proficiency and expertise.</p>
-      <b>4. Now</b>
-      <p>I'm currently learning AWS, more intermediate to advance ASP.NET concepts and tools, and cloud technologies to deepen and hone my skills.</p>
+      <b>4. Now ({moment().format("MMMM YYYY")})</b>
+      <p>I'm currently learning AWS, more intermediate to advance ASP.NET Core concepts and tools, and cloud technologies to deepen and hone my skills.</p>
 
       <h2>Technologies</h2>
       <ul>
@@ -40,8 +47,10 @@ export default function Biography() {
         <li>Node.js</li>
         <li>Crystal Report</li>
         <li>Git</li>
-        <li>Azure DevOps</li>
         <li>Github</li>
+        <li>Azure DevOps</li>
+        <li>Visual Studio</li>
+        <li>Visual Studio Code</li>
       </ul>
 
       <h2>Interests</h2>

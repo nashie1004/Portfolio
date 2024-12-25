@@ -4,12 +4,12 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 export default function Aside() {
   return (
     <aside>
-      <img src="https://picsum.photos/id/130/250/250.jpg" />
+      <img src="https://picsum.photos/id/131/250/250.jpg" />
       <h1>Nash Andrew</h1>
       <h2>Full-stack Developer</h2>
 
       <div id="links">
-        <a href="mainto:naocenar@gmail.com">naocenar@gmail.com</a>
+        <a href="mailto:naocenar@gmail.com">naocenar@gmail.com</a>
         <a href="#">Resume</a>
         <a href="https://nashandrew.onrender.com/">My Previous Site</a>
         <div id="sites">
