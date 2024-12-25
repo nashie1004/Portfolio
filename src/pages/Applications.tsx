@@ -2,6 +2,9 @@ import React from 'react'
 
 export default function Applications() {
   return (
-    <div>Applications</div>
+    <>
+      <h2>The Strength Logs</h2>
+      <p>A workout tracker web app</p>
+    </>
   )
 }

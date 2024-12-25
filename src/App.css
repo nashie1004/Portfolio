@@ -35,6 +35,10 @@ a:hover {
   /* color: #7379cc; */
 }
 
+h2{
+  color: #dda5a5;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -67,6 +71,10 @@ aside{
   text-align: right;
 }
 
+aside h2{
+  color: rgba(255, 255, 255, 0.87);
+}
+
 aside img{
   border-radius: 50%;
   width: 250px;
@@ -75,10 +83,24 @@ aside img{
   margin-bottom: 1rem;
 }
 
-aside nav{
+aside #links, aside nav{
   display: flex;
   flex-direction: column;
   align-items: end;
+}
+
+aside #links{
+  margin-bottom: 1rem;
+}
+
+aside #links a{
+  color: rgba(255, 255, 255, 0.87);
+  line-height: 2rem;
+}
+
+aside #links #sites{
+  display: flex;
+  gap: .4rem;
 }
 
 aside nav a{
@@ -86,6 +108,7 @@ aside nav a{
 }
 
 main {
+  width: 100%;
   max-width: 600px;
   text-align: start;
   /* display: flex; */
