@@ -10,7 +10,7 @@ export default function Aside() {
 
       <div id="links">
         <a href="mailto:naocenar@gmail.com">naocenar@gmail.com</a>
-        <a href="#">Resume</a>
+        <a href="#">My Resume</a>
         <a href="https://nashandrew.onrender.com/">My Previous Site</a>
         <div id="sites">
           <a href="https://github.com/nashie1004"><FaGithub size={40} /></a>

@@ -28,6 +28,7 @@ const liveApps: IApplication[] = [
 ]
 
 export default function Applications() {
+  
   return (
     <>
       <h1>Live</h1>

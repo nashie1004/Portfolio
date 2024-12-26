@@ -5,11 +5,11 @@ export default function Biography() {
     <>
       <h1>Hi.</h1>
       <h2>About me</h2>
-      <p>I'm a full-stack developer living in the Philippines specializing in developing web applications with ASP.NET Core, React, Typescript and SQL.</p>
+      <p>I'm a self-taught full-stack developer living in the Philippines specializing in developing web applications with ASP.NET Core, React, Typescript and SQL.</p>
       <p>
         I have been working at 
         <a href="https://www.linkedin.com/company/algar-information-systems-inc-"> ALGAR Information Systems Inc. </a>
-        for {moment().diff("7/10/2023", "years", true).toFixed(1)} year(s), developing web applications with JQuery, C#, SQL Server and Crystal Report.
+        for {moment().diff("7/10/2023", "years", true).toFixed(1)} year(s), developing web applications with JQuery, ASP.NET Core, SQL Server and Crystal Report.
       </p>
       <p>
         You can contact me on my 
