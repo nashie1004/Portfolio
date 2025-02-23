@@ -3,5 +3,5 @@ export interface IApplication{
     name: string,
     description: string,
     githubURL: string,
-    imageURL: string
+    imageURL: string | null
 }

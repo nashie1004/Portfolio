@@ -5,11 +5,25 @@ import project3 from "../assets/project-3.gif"
 
 const liveApps: IApplication[] = [
   {
+    siteUrl: "#"
+    ,name: "Online Chess"
+    ,description: "A full stack real time chess web app made with React, C# and SQLite."
+    ,githubURL: "https://github.com/nashie1004/online-chess"
+    ,imageURL: null
+  }
+  ,{
     siteUrl: "https://nashie1004.github.io/Path-Finding-Visualizer/"
     ,name: "Path Finding Visualizer"
     ,description: "A path finding algorithm visualizer for the Dijkstra, breadth first search and depth first search algorithms."
     ,githubURL: "https://github.com/nashie1004/Path-Finding-Visualizer"
     ,imageURL: project1
+  }
+  ,{
+    siteUrl: "#"
+    ,name: "Billiards (8 Ball)"
+    ,description: "" 
+    ,githubURL: "#"
+    ,imageURL: null
   }
   ,{
     siteUrl: "https://socketiochatappreact.onrender.com/"
@@ -31,11 +45,10 @@ export default function Applications() {
   
   return (
     <>
-      <h1>Live</h1>
       {
         liveApps.map((item, idx) => {
           return <div key={idx} className="card">
-            <img src={item.imageURL} alt={item.name} />
+            <img src={item.imageURL ?? ""} alt={item.name} />
             <div className="card-body">
               <h2>{item.name}</h2>
               <div className="card-links">

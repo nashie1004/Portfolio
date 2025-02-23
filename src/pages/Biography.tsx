@@ -1,6 +1,10 @@
 import moment from "moment";
 
 export default function Biography() {
+  const duration = moment.duration(moment().diff(moment("7/10/2023")));
+  const yrs = duration.years();
+  const months = duration.months();
+
   return (
     <>
       <h1>Hi.</h1>
@@ -9,7 +13,7 @@ export default function Biography() {
       <p>
         I have been working at 
         <a href="https://www.linkedin.com/company/algar-information-systems-inc-"> ALGAR Information Systems Inc. </a>
-        for {moment().diff("7/10/2023", "years", true).toFixed(1)} year(s), developing web applications with JQuery, ASP.NET Core, SQL Server and Crystal Report.
+        for {yrs} year(s) and {months} month(s), developing web applications with JQuery, ASP.NET Core, SQL Server and Crystal Report.
       </p>
       <p>
         You can contact me on my 
@@ -41,21 +45,19 @@ export default function Biography() {
         <li>React.js</li>
         <li>C# / ASP.NET Core</li>
         <li>SQL Server / SQL</li>
-        <li>Node.js</li>
         <li>Crystal Report</li>
         <li>Git</li>
         <li>Github</li>
         <li>Azure DevOps</li>
         <li>Visual Studio</li>
         <li>Visual Studio Code</li>
+        <li>AWS (still a newbie)</li>
       </ul>
 
       <h2>Interests</h2>
       <ul>
-        <li>Web Development</li>
-        <li>Front-end Development</li>
-        <li>Back-end Development</li>
-        <li>Full-stack Development</li>
+        <li>Full-Stack Web Development</li>
+        <li>Web-Based Game Development</li>
       </ul>
     </>
   )

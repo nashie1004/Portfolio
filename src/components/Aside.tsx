@@ -1,10 +1,11 @@
 import { NavLink } from "react-router";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import myImg from "../assets/profile-centered.jpg"
 
 export default function Aside() {
   return (
     <aside>
-      <img src="https://picsum.photos/id/131/250/250.jpg" />
+      <img src={myImg} alt="my-face" className="profile-img" />
       <h1>Nash Andrew</h1>
       <h2>Full-stack Developer</h2>
 
