@@ -15,7 +15,7 @@ export default function Aside() {
         <a href="https://nashandrew.onrender.com/">My Previous Site</a>
         <div id="sites">
           <a href="https://github.com/nashie1004"><FaGithub size={40} /></a>
-          <a href="https://www.linkedin.com/in/nash-ocenar-447b63253/"><FaLinkedin size={40} /></a>
+          <a href="https://www.linkedin.com/in/nash-andrew-ocenar-447b63253/"><FaLinkedin size={40} /></a>
         </div>
       </div>
 
