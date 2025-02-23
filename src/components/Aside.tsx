@@ -1,6 +1,6 @@
 import { NavLink } from "react-router";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import myImg from "../assets/profile-centered.jpg"
+import myImg from "../assets/profile.jpg"
 
 export default function Aside() {
   return (
