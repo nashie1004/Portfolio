@@ -2,14 +2,15 @@ import { IApplication } from "../types/types"
 import project1 from "../assets/project-1.gif"
 import project2 from "../assets/project-2.gif"
 import project3 from "../assets/project-3.gif"
+import project4 from "../assets/project-4.gif"
 
 const liveApps: IApplication[] = [
   {
-    siteUrl: "#"
+    siteUrl: "https://online-chess.xyz"
     ,name: "Online Chess"
     ,description: "A full stack real time chess web app made with React, C# and SQLite."
     ,githubURL: "https://github.com/nashie1004/online-chess"
-    ,imageURL: null
+    ,imageURL: project4
   }
   ,{
     siteUrl: "https://nashie1004.github.io/Path-Finding-Visualizer/"
@@ -17,13 +18,6 @@ const liveApps: IApplication[] = [
     ,description: "A path finding algorithm visualizer for the Dijkstra, breadth first search and depth first search algorithms."
     ,githubURL: "https://github.com/nashie1004/Path-Finding-Visualizer"
     ,imageURL: project1
-  }
-  ,{
-    siteUrl: "#"
-    ,name: "Billiards (8 Ball)"
-    ,description: "" 
-    ,githubURL: "#"
-    ,imageURL: null
   }
   ,{
     siteUrl: "https://socketiochatappreact.onrender.com/"
@@ -39,6 +33,13 @@ const liveApps: IApplication[] = [
     ,githubURL: "https://github.com/nashie1004/Client-Spotify"
     ,imageURL: project3
   }
+  // ,{
+  //   siteUrl: "#"
+  //   ,name: "Billiards (8 Ball)"
+  //   ,description: "" 
+  //   ,githubURL: "#"
+  //   ,imageURL: null
+  // }
 ]
 
 export default function Applications() {
@@ -53,7 +54,7 @@ export default function Applications() {
               <h2>{item.name}</h2>
               <div className="card-links">
                 <a href={item.githubURL}>Github</a>
-                <a href={item.siteUrl}>Site</a>
+                <a href={item.siteUrl}>Live</a>
               </div>
               <p>{item.description}</p>
             </div>
