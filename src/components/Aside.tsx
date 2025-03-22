@@ -1,6 +1,7 @@
 import { NavLink } from "react-router";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import myImg from "../assets/profile.jpg"
+import myResume from "../assets/nash-ocenar-resume.pdf"
 
 export default function Aside() {
   return (
@@ -11,7 +12,7 @@ export default function Aside() {
 
       <div id="links">
         <a href="mailto:naocenar@gmail.com">naocenar@gmail.com</a>
-        <a href="#">My Resume</a>
+        <a download="nash-ocenar-resume.pdf" href={myResume}>My Resume</a>
         <a href="https://nashandrew.onrender.com/">My Previous Site</a>
         <div id="sites">
           <a href="https://github.com/nashie1004"><FaGithub size={40} /></a>

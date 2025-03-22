@@ -5,7 +5,7 @@ import project3 from "../assets/project-3.gif"
 
 const liveApps: IApplication[] = [
   {
-    siteUrl: "#"
+    siteUrl: "https://online-chess.xyz"
     ,name: "Online Chess"
     ,description: "A full stack real time chess web app made with React, C# and SQLite."
     ,githubURL: "https://github.com/nashie1004/online-chess"
