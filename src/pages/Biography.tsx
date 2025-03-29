@@ -34,7 +34,7 @@ export default function Biography() {
       <b>3. July 2024</b>
       <p>I reached 1 year of work experience, gaining more proficiency and expertise.</p>
       <b>4. Now ({moment().format("MMMM YYYY")})</b>
-      <p>I'm currently learning AWS, more intermediate to advance ASP.NET Core concepts and tools, and cloud technologies to deepen and hone my skills.</p>
+      <p>I'm currently learning AWS EC2, AWS S3, advanced ASP.NET Core concepts and tools, and computer networking to deepen and hone my skills.</p>
 
       <h2>Technologies</h2>
       <ul>
@@ -51,7 +51,8 @@ export default function Biography() {
         <li>Azure DevOps</li>
         <li>Visual Studio</li>
         <li>Visual Studio Code</li>
-        <li>AWS (still a newbie)</li>
+        <li>AWS EC2</li>
+        <li>AWS S3</li>
       </ul>
 
       <h2>Interests</h2>
