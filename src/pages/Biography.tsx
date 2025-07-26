@@ -1,23 +1,20 @@
 import moment from "moment";
 
 export default function Biography() {
-  const duration = moment.duration(moment().diff(moment("7/10/2023")));
-  const yrs = duration.years();
-  const months = duration.months();
+  const startDate = moment("7/10/2023", "M/D/YYYY");
+  const today = moment();
+
+  const yrs = today.diff(startDate, 'years');
 
   return (
     <>
       <h1>Hi.</h1>
       <h2>About me</h2>
-      <p>I'm a self-taught full-stack developer living in the Philippines specializing in developing web applications with ASP.NET Core, React, Typescript and SQL.</p>
-      <p>
-        I have been working at 
-        <a href="https://www.linkedin.com/company/algar-information-systems-inc-"> ALGAR Information Systems Inc. </a>
-        for {yrs} year(s) and {months} month(s), developing web applications with JQuery, ASP.NET Core, SQL Server and Crystal Report.
-      </p>
+      <p>I'm a self-taught developer living in the Philippines specializing in C#/.NET, JS and SQL with {yrs} YOE. I'm currently working for 
+        <a href="https://www.linkedin.com/company/tribal"> Tribal Group</a> as a Junior Developer.</p>
       <p>
         You can contact me on my 
-        <a href="https://www.linkedin.com/in/nash-ocenar-447b63253/"> LinkedIn </a>
+        <a href="https://www.linkedin.com/in/nash-andrew-ocenar-447b63253/"> LinkedIn </a>
         or send me an email at <a href="mailto:naocenar@gmail.com"> naocenar@gmail.com</a>.
       </p>
 
@@ -30,21 +27,27 @@ export default function Biography() {
         <a href="https://www.freecodecamp.org/"> Free Code Camp</a>.
       </p>
       <b>2. July 2023</b>
-      <p>I started working professionally as a web developer.</p>
+      <p>
+        I started working professionally as a developer at 
+        <a href="https://www.linkedin.com/company/algar-information-systems-inc-"> ALGAR</a>, 
+        developing web applications with JQuery, .NET, SQL Server and Crystal Report.
+      </p>
       <b>3. July 2024</b>
-      <p>I reached 1 year of work experience, gaining more proficiency and expertise.</p>
-      <b>4. Now ({moment().format("MMMM YYYY")})</b>
-      <p>I'm currently learning AWS EC2, AWS S3, advanced ASP.NET Core concepts and tools, and computer networking to deepen and hone my skills.</p>
+      <p>I reached 1 year of work experience at <a href="https://www.linkedin.com/company/algar-information-systems-inc-"> ALGAR</a>.</p>
+      <b>4. July 2025</b>
+      <p>After nearly 2 years, I switched and started working at <a href="https://www.linkedin.com/company/tribal">Tribal Group</a> as a Junior Developer.</p>
+      <b>5. Now ({moment().format("MMMM YYYY")})</b>
+      <p>I'm improving my C# and cloud skills.</p>
 
-      <h2>Technologies</h2>
+      <h2>Skills</h2>
       <ul>
         <li>HTML</li>
         <li>CSS</li>
-        <li>Javascript and Typescript</li>
+        <li>Javascript/Typescript</li>
         <li>JQuery</li>
-        <li>React.js</li>
-        <li>C# / ASP.NET Core</li>
-        <li>SQL Server / SQL</li>
+        <li>React</li>
+        <li>C# / .NET</li>
+        <li>SQL Server</li>
         <li>Crystal Report</li>
         <li>Git</li>
         <li>Github</li>
@@ -55,11 +58,6 @@ export default function Biography() {
         <li>AWS S3</li>
       </ul>
 
-      <h2>Interests</h2>
-      <ul>
-        <li>Full-Stack Web Development</li>
-        <li>Web-Based Game Development</li>
-      </ul>
     </>
   )
 }
